@@ -2,6 +2,11 @@ PROJEK INI DIBUAT SEBAGAI TUGAS AKHIR SEMESTER MATA KULIAH PEMROGRAMAN WEB
 
 DOSEN PEMBIMBING : Sophian Andhika Sardi, S.Kom., M.Kom
 
+NAMA KELOMPOK
+- ALIMAN FIJAR BUANA
+- AGUNG NABAWI
+- HIKMATUL ZULFA
+  
 # PEMBUATAN WEB Rental Mobil
 Rental Mobil Berbasis website ini memiliki tampilan yang sederhana dan fitur yang mampu berfungsi dengan baik.
 ## Page Web
