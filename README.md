@@ -1,9 +1,13 @@
-PROJEK INI DIBUAT SEBAGAI TUGAS AKHIR SEMESTER MATA KULIAH PEMROGRAMAN WEB
-DOSEN PEMBIMBING : Sophian Andhika Sardi, S.Kom., M.Kom
+## PROJEK INI DIBUAT SEBAGAI TUGAS AKHIR SEMESTER MATA KULIAH PEMROGRAMAN WEB
+
+## DOSEN PEMBIMBING : Sophian Andhika Sardi, S.Kom., M.Kom
 
 # Rental-Mobil
 Rental Mobil Berbasis website ini memiliki tampilan yang sederhana dan fitur yang mampu berfungsi dengan baik.
-
+## Page Web
+Untuk mengakses page Web, Harus sesuai nama file di htdocs disini nama file kami Kelompok6_RentalMobil sehingga
+untuk mengakses page wab gunakan url http://localhost/Kelompok6_RentalMobil/
+# Page Admin
 Untuk mengakses page ADMIN, Tambahkan url /admin. Contohnya yaitu  http://localhost/Kelompok6_RentalMobil/admin
 
 ## USER LOGIN
