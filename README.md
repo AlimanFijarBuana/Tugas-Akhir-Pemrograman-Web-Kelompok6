@@ -1,22 +1,28 @@
+PROJEK INI DIBUAT SEBAGAI TUGAS AKHIR SEMESTER MATA KULIAH PEMROGRAMAN WEB
+DOSEN PEMBIMBING : Sophian Andhika Sardi, S.Kom., M.Kom
+
 # Rental-Mobil
 Rental Mobil Berbasis website ini memiliki tampilan yang sederhana dan fitur yang mampu berfungsi dengan baik.
 
-To access admin page, add url /admin. Example http://localhost/rental_eria2/admin
+Untuk mengakses page ADMIN, Tambahkan url /admin. Contohnya yaitu  http://localhost/Kelompok6_RentalMobil/admin
 
-## Tampilan Aplikasi
-![ss](images/ss1.png)
-![ss](images/ss2.png)
-![ss](images/ss3.png)
-![ss](images/ss4.png)
-![ss](images/ss5.png)
-![ss](images/ss6.png)
+## USER LOGIN
+|   Level   |     Username         | Password |
+|:---------:|:--------------------:|---------:|
+| User      | robypurba@gmail.com  | coba     |
+| User      | udin@gmail.com       | coba     |
+*NOTES : Kalian juga bisa register akun sesuai yang anda mau dengan wajib pakai @gmail.com diakhirnya
 
-## Admin Account
-|   Level   |     Username      | Password |
-|:---------:|:-----------------:|---------:|
-| Admin     |  admin            | admin    |
-| User      |  yusuf@gmail.com  | yusuf    |
 
-## Sistem Requirement
+## ADMIN LOGIN
+|   Level    |     Username        | Password |
+|:----------:|:-------------------:|---------:|
+| Admin      |  admin              | admin    |
+| Admin      |  aliman fijar       | admin    |
+| Admin      |  agung nabawi       | admin    |
+| Admin      |  hikmatul zulfa     | admin    |
+*NOTES : Sayangnya kami tidak membuat untuk register admin seperti user, namun bisa ditambahkan di phpmyadmin dengan menyalin isi pada tabel lalu dirubah saja namanya sesuai kemauan, sayangnya paswordnya tidak bisa diubah dan hanya bisa "admin"
+
+## SISTEM YANG DIGUNAKAN
 - Database MySQL
-- XAMPP / PHP 5.6
+- XAMPP / PHP 
