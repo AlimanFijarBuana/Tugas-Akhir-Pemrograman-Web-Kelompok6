@@ -1,8 +1,7 @@
-## PROJEK INI DIBUAT SEBAGAI TUGAS AKHIR SEMESTER MATA KULIAH PEMROGRAMAN WEB
+PROJEK INI DIBUAT SEBAGAI TUGAS AKHIR SEMESTER MATA KULIAH PEMROGRAMAN WEB
+DOSEN PEMBIMBING : Sophian Andhika Sardi, S.Kom., M.Kom
 
-## DOSEN PEMBIMBING : Sophian Andhika Sardi, S.Kom., M.Kom
-
-# Rental-Mobil
+# PEMBUATAN WEB Rental Mobil
 Rental Mobil Berbasis website ini memiliki tampilan yang sederhana dan fitur yang mampu berfungsi dengan baik.
 ## Page Web
 Untuk mengakses page Web, Harus sesuai nama file di htdocs disini nama file kami Kelompok6_RentalMobil sehingga
