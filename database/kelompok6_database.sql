@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 07 Jan 2024 pada 17.31
+-- Waktu pembuatan: 10 Jan 2024 pada 04.43
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 7.3.33
 
@@ -69,14 +69,7 @@ CREATE TABLE `booking` (
 --
 
 INSERT INTO `booking` (`kode_booking`, `id_mobil`, `tgl_mulai`, `tgl_selesai`, `durasi`, `driver`, `status`, `email`, `pickup`, `tgl_booking`, `bukti_bayar`) VALUES
-('TRX00000', 10, '2024-01-05', '2024-01-06', 2, 900000, 'Selesai', 'robypurba@gmail.com', 'Ambil Sendiri', '2024-01-04', '0401202423354207092022080027id (1).png'),
-('TRX00001', 10, '2024-01-12', '2024-01-13', 2, 900000, 'Menunggu Pembayaran', 'robypurba@gmail.com', 'Ambil Sendiri', '2024-01-04', ''),
-('TRX00002', 11, '2024-01-20', '2024-01-25', 6, 2700000, 'Menunggu Pembayaran', 'robypurba@gmail.com', 'Ambil Sendiri', '2024-01-04', ''),
-('TRX00003', 10, '2024-02-06', '2024-02-07', 2, 0, 'Menunggu Pembayaran', 'robypurba@gmail.com', 'Ambil Sendiri', '2024-01-04', ''),
-('TRX00004', 12, '2024-01-19', '2024-01-20', 2, 0, 'Menunggu Pembayaran', 'robypurba@gmail.com', 'Ambil Sendiri', '2024-01-05', ''),
-('TRX00005', 12, '2024-01-12', '2024-01-13', 2, 0, 'Menunggu Pembayaran', 'udin@gmail.com', 'Ambil Sendiri', '2024-01-05', ''),
-('TRX00006', 12, '2024-03-06', '2024-04-25', 51, 22950000, 'Menunggu Pembayaran', 'robypurba@gmail.com', 'Ambil Sendiri', '2024-01-05', ''),
-('TRX00007', 10, '2024-02-15', '2024-02-16', 2, 0, 'Menunggu Pembayaran', 'robypurba@gmail.com', 'Ambil Sendiri', '2024-01-07', '');
+('TRX00000', 10, '2024-01-05', '2024-01-06', 2, 900000, 'Selesai', 'robypurba@gmail.com', 'Ambil Sendiri', '2024-01-04', '0401202423354207092022080027id (1).png');
 
 -- --------------------------------------------------------
 
@@ -175,7 +168,11 @@ INSERT INTO `cek_booking` (`kode_booking`, `id_mobil`, `tgl_booking`, `status`) 
 ('TRX00006', 12, '2024-04-24', 'Menunggu Pembayaran'),
 ('TRX00006', 12, '2024-04-25', 'Menunggu Pembayaran'),
 ('TRX00007', 10, '2024-02-15', 'Menunggu Pembayaran'),
-('TRX00007', 10, '2024-02-16', 'Menunggu Pembayaran');
+('TRX00007', 10, '2024-02-16', 'Menunggu Pembayaran'),
+('TRX00008', 11, '2024-03-01', 'Menunggu Pembayaran'),
+('TRX00008', 11, '2024-03-02', 'Menunggu Pembayaran'),
+('TRX00001', 10, '2024-01-15', 'Menunggu Pembayaran'),
+('TRX00001', 10, '2024-01-16', 'Menunggu Pembayaran');
 
 -- --------------------------------------------------------
 
@@ -192,14 +189,6 @@ CREATE TABLE `contactus` (
   `tgl_posting` timestamp NOT NULL DEFAULT current_timestamp(),
   `status` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `contactus`
---
-
-INSERT INTO `contactus` (`id_cu`, `nama_visit`, `email_visit`, `telp_visit`, `pesan`, `tgl_posting`, `status`) VALUES
-(1, 'Anuj Kumar', 'webhostingamigo@gmail.com', '2147483647', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', '2017-06-18 10:03:07', 1),
-(2, 'kjk', 'jlkl@gmail.com', '98989898', 'kjlkjkljklj', '2018-03-06 14:01:39', 1);
 
 -- --------------------------------------------------------
 
@@ -219,7 +208,7 @@ CREATE TABLE `contactusinfo` (
 --
 
 INSERT INTO `contactusinfo` (`id_info`, `alamat_kami`, `email_kami`, `telp_kami`) VALUES
-(1, 'Jl. Inspeksi Kalimalang No.9, Cibatu, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530\r\n', 'rentalmobil@gmail.com', '08585233222');
+(1, 'Jl. Inspeksi Kalimalang No.9, Cibatu, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530\r\n', 'rentalmobil@gmail.com', '08512222333');
 
 -- --------------------------------------------------------
 
@@ -337,9 +326,6 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id_user`, `nama_user`, `email`, `password`, `telp`, `alamat`, `ktp`, `kk`, `RegDate`, `UpdationDate`) VALUES
-(7, 'Yusuf', 'yusuf@gmail.com', 'dd2eb170076a5dec97cdbbbbff9a4405', '08122233343', 'Jl. Sukosemolo', '07092022132814id.png', '07092022132814id (1).png', '2022-09-07 11:28:14', NULL),
-(8, 'Widya Prastika', 'widya@gmail.com', '9146bfc09df862ee46fa9b512c72f9a6', '08977788898', 'Jl. Ahmad Yani', '07092022132849id.png', '07092022132849id (1).png', '2022-09-07 11:28:49', NULL),
-(9, 'Alvian Andhi', 'alvian@gmail.com', 'e8cb77839eba5ec65525e642c3899b3b', '08766655567', 'Jl. Rowo Jombor', '07092022132925id.png', '07092022132925id (1).png', '2022-09-07 11:29:25', NULL),
 (10, 'ROBY PURBA', 'robypurba@gmail.com', 'c3ec0f7b054e729c5a716c8125839829', '20896423428', 'Jl. Pattimura 1 blok A5 no 2', '0401202415345207092022075619id.png', '0401202415345207092022080027id (1).png', '2024-01-04 14:34:52', NULL),
 (11, 'udin', 'udin@gmail.com', 'c3ec0f7b054e729c5a716c8125839829', '08474673424', 'udin@gmail.com', '04012024214259pexels-hyundai-motor-group-11262462.jpg', '04012024214259pexels-hyundai-motor-group-19146408.jpg', '2024-01-04 20:42:59', NULL);
 
